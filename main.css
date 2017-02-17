@@ -1,0 +1,14 @@
+.the_Question {
+	text-align: center;
+	padding: 15px;
+}
+
+.search_youTube{
+	text-align: center;
+}
+
+.js_submit_button{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
