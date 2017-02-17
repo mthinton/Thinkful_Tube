@@ -15,7 +15,8 @@ function displaySearchResults(data){
 	if(data.items){
 		data.items.forEach(function(item){
 			console.log(item);
-			resultElement +=  '<a href="https://www.youtube.com/watch?v=' + item.id.videoId +'"><img src="'+item.snippet.thumbnails.medium.url+'"></a>';
+			resultElement +=  '<iframe src="https://www.youtube.com/embed/' + item.id.videoId +'" allowfullscreen></iframe> + <a href="https://www.youtube.com/channel/'+item.snippet.channelId+'">See user channel</a>';
+			console.log(resultElement);
 		});
 	}
 	else{
